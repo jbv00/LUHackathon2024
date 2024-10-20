@@ -3,7 +3,7 @@ Visual Imagery and Memorization Project:
 
 Memory champions have been memorizing hundreds, even thousands of digits of pi, but how do they do it and how can we use this to help us in school?
 
-#Tutorial Section:
+Tutorial Section:
 
 The code I generated follows the strategy that the Memory Champions use of splitting pi into triplets, and then creating mental images in their mind that make the numbers stick.
 
@@ -27,7 +27,7 @@ Then I call DeepAI to generate ai images for each acronym to help you visualize 
 
 Next I prompt you to re-input the acronyms and it checks if they are correct. After the acronyms are correct, you decode them to get the digits.
 
-#Application:
+Application:
 
 In the application tab, you can create your own key, which the code then compiles into a list, splits into triplets, generates acronyms and then generates images from.
 
