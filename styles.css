@@ -1,0 +1,297 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header-tabs-container {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+}
+
+.page-header h1 {
+    text-align: left;
+    margin-right: 10px;
+    color: lightsteelblue;
+}
+
+.tabs {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs li {
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.tabs li.active {
+    color: lightsteelblue;
+}
+.tabs li:hover {
+    color: #AAA;
+}
+.tab-content {
+    margin: 20px;
+}
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+.about-image {
+    width: 250px;
+    height: auto;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+}
+.quote-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #333;
+    font-size: 1.2em;
+}
+.quote-box cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+.get-started-btn,
+.generate-images-btn,
+.replay-btn,
+.translate-pi-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+.get-started-btn:hover,
+.generate-images-btn:hover,
+.replay-btn:hover,
+.translate-pi-btn:hover {
+    background-color: #45a049;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+.description-box {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border-right: 4px solid #539acd;
+    border-left: 4px solid #539acd;
+}
+.description-box.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out;
+}
+#animation-box {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+}
+#animation-box.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out;
+}
+.generated-table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.generated-table th,
+.generated-table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+.generated-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.generated-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#translate-pi-btn {
+    display: none;
+}
+#art-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.step-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+.triplet {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+#acronym-box {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+#acronym-box.show {
+    display: flex;
+    opacity: 1;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.input-box {
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.input-box:last-child {
+    margin-right: 0;
+}
+.input-box {
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+.text-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.application-table {
+    width: 30%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.application-table th,
+.application-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.application-table th {
+    background-color: #f2f2f2;
+}
+
+.application-table td input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+.element-input-box {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.element-input-box:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}

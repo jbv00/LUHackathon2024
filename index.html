@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Tabs</title>
+</head>
+<body>
+    <div class="header-tabs-container">
+        <header class="page-header">
+            <h1>Visual Imagery and Memorization</h1>
+        </header>
+
+        <ul class="tabs">
+            <li data-tab-target="#home" class="active tabs">Home/Practice</li>
+            <li data-tab-target="#application" class="tabs">Application</li>
+            <li data-tab-target="#about" class="tabs">About The Project</li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <h1>Tutorial: How do you memorize long lists of arbitrary numbers?</h1>
+            <blockquote class="quote-box">
+                "You have to take the thing you want to memorize and turn it into a mental picture; something that is absurd, weird, out of the ordinary." 
+                <cite>- Nelson Dellis</cite>
+            </blockquote>
+            <button id="get-started" class="get-started-btn">Get Started</button>
+            <div id="description-box1" class="description-box"></div>
+            <div id="description-box2" class="description-box"></div>
+            <div id="animation-box" class="animation-box"></div>
+            <div id="description-box3" class="description-box"></div>
+            <button id="translate-pi-btn" class="translate-pi-btn">Translate Pi and Generate Acronyms</button>
+            <div id="triplet-box" class="description-box"></div>
+            <div id="acronym-box" class="acronym-box" style="display: none;"></div>
+            <div id="description-box6" class="description-box"></div>
+            <div id="art-container" style="margin-top: 20px;"></div>
+            <div id="description-box5" class="description-box"></div>
+            </div>
+        </div>
+        <div id="application" data-tab-content>
+            <h1>Applications</h1>
+                <div class="text-box">
+                    <p>You can use this section to use this format to memorize any list of things you want!</p>
+                <table id="application-table" class="application-table">
+                    <thead>
+                        <tr>
+                            <th>Elements</th>
+                            <th>Letters</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+                <button id="add-row-btn">Add Row</button>
+                <button id="autofill-btn">Autofill</button>
+                <button id="submit-btn">Randomly Generate Acronyms</button>
+                <div id="result-box"></div>
+            </div>
+        </div>
+        <div id="about" data-tab-content>
+            <h1>About The Project</h1>
+            <img src="memchamp.jpg" class="about-image">
+            <p>We are Jack, Spencer, Yang, and Lin and we are CSE students. Jack is a Cognitive Science student so he LOVES to integrate neuroscience, AI, computer science, psychology, etc.</p>
+            <p>What inspired this project was when he learned about "Memory Champions" in his cognitive psychology class.</p>
+            <p>The quote we used on the home page is actually advice from a memory champion himself. This is a photo of Nelson Dellis at a memory championship.
+                It is this concept of visual imagery that sparked the idea to turn this process of generating mental imagery
+                from a manual process, to an automatic one.
+            </p>
+            <p>It was then, that we realized that these techniques dont only have to be used for memory championships, they can also be used
+                to help you exceed academically. Your memory is malleable, it can get worse, or it can get better, and there is verifiable evidence
+                that mental visual imagery is the key that unlocks the great extent of your memory :]
+            </p>
+            <p>image from https://www.nelsondellis.com/gallery</p>
+        </div>
+    </div>
+</body>
+</html>
